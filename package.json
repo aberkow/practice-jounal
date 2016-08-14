@@ -1,0 +1,28 @@
+{
+  "name": "practice-journal",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "version": "1.0.0",
+  "description": "A daily practice journal for musicians",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aberkow/practice-jounal.git"
+  },
+  "author": "Adam Berkowitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aberkow/practice-jounal/issues"
+  },
+  "homepage": "https://github.com/aberkow/practice-jounal#readme"
+}
