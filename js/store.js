@@ -1,10 +1,14 @@
-var redux  = require('redux');
-var createStore = redux.createStore;
-// const applyMiddleware = redux.applyMiddleware;
-// const thunk = require('redux-thunk').defualt;
+//var redux  = require('redux');
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import createLogger from 'redux-logger';
 
 var reducers = require('./reducers');
 
-var store = createStore(reducers.journalReducer);
+const logger = createLogger();
+const store = createStore(
+  reducers.journalReducer,
+  applyMiddleware(thunk, logger)
+);
 
 module.exports = store;

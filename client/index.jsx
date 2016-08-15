@@ -16,7 +16,7 @@ class App extends Component{
   render(){
     return(
       <Provider store={store}>
-        <Journal name={this.props.name} />
+        <Journal />
       </Provider>
     );
   };

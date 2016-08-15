@@ -1,7 +1,8 @@
 const actions = require('./actions');
 
 var journalState = {
-  name: ''
+  name: '',
+  agenda: ''
 }
 
 var journalReducer = function(state, action){
@@ -12,6 +13,13 @@ var journalReducer = function(state, action){
       name: name
     });
     return nameState;
+  }
+  else if (action.type === actions.SET_AGENDA){
+    var agenda = action.agenda;
+    var agendaState = Object.assign({}, state, {
+      agenda: agenda
+    });
+    return agendaState;
   }
   return state;
 }
